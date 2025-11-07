@@ -38,8 +38,26 @@ Key features include:
 
 ## ⚙️ Environment Setup
 
-### Option 1: Using Remix IDE (Recommended)
 1. Clone this repository:
    ```bash
    git clone https://github.com/your-username/pharma-supply-chain.git
    cd pharma-supply-chain
+
+2. Install Dependencies
+    ```bash
+    npm install
+    npm install @openzeppelin/contracts
+    (Alternative)
+    npm install --save-dev hardhat
+
+3. Create and configure environment
+   Create a .env file in the root directory:  <br>
+   PRIVATE_KEY=your_wallet_private_key, <br>
+   SEPOLIA_RPC_URL=https://eth-sepolia.g.alchemy.com/v2/YOUR_KEY, <br>
+   ETHERSCAN_API_KEY=your_key, <br>
+   REPORT_GAS=false.
+   
+4) Compile contracts:
+   ```bash
+   npx hardhat compile
+
