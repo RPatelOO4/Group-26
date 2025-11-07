@@ -1,15 +1,14 @@
 pragma solidity ^0.8.0;
 /**
-  @title PharmaSupplyChain
-  @dev Main smart contract for managing pharmaceutical supply chain provenance
-  @notice This contract tracks pharmaceutical products and raw materials from manufacturers to end consumers
-  
-  Key Features:
-  - Immutable record keeping for products and raw materials
-  - Role-based access control for different stakeholders
-  - Event logging for complete traceability
-  - Product provenance verification
- */
+ @group 26
+ @title PharmaSupplyChain
+ @dev this is the main smart contract that we made for handling the pharma supply chain provenance. 
+ it basically keeps track of the products and raw materials as they move around.  
+
+ the idea is to make sure we can see where stuff came from and who had it before. 
+ it’s about transparency and making sure the medicine is authentic.  
+*/
+
 
 import "@openzeppelin/contracts/access/AccessControl.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
